@@ -22,8 +22,9 @@ main {
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: center;
+  background-position-x: 670px;
+  /* background-size: 50% 100%; */
+  background-position-y: 5px;
   background-image: url(./images/pattern-bg.svg);
 }
 .curve-bg {
@@ -33,9 +34,10 @@ main {
 .slider {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: yellow;
   align-items: center;
+  justify-items: left;
   position: absolute;
+  margin-top: 2.1em;
 }
 .info-container {
   background-image: url(./images/pattern-quotes.svg);
@@ -45,28 +47,50 @@ main {
   position: relative;
   left: 0;
   margin-left: 5em;
-  padding-top: 2em;
+  padding-top: 2.15em;
   z-index: 5;
 }
 .info-container .hero {
   position: relative;
-  right: 0;
 }
 .hero {
   display: grid;
   position: relative;
   z-index: 2;
 }
+.user-img {
+  box-shadow: 0px 10px 30px 2px rgba(32, 32, 70, 0.2);
+}
 button {
-  width: 90px;
+  width: 100px;
   height: 45px;
   margin: -30px;
-  margin-left: 60px;
+  margin-left: 70px;
   border: none;
   border-radius: 50px;
   align-items: center;
-  box-shadow: 0px 10px 20px 3px rgba(32, 32, 70, 0.3);
+  box-shadow: 0px 10px 30px 2px rgba(32, 32, 70, 0.2);
+  background-color: white;
 }
 button img {
-  margin: 0 1em;
+  margin: 0 1.3em;
+}
+blockquote {
+  color: var(--DarkBlue);
+  font-weight: 300;
+}
+figcaption {
+  display: flex;
+  margin: 1em 1em 0 0;
+}
+.name,
+.rol {
+  color: var(--DarkBlue);
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 0.5em;
+}
+.rol {
+  color: var(--GrayishBlue);
+  font-weight: 300;
 }
