@@ -1,9 +1,9 @@
 @media (max-width: 875px) {
   main {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 6fr 1fr 8fr;
+    grid-template-rows: 8.5fr 1fr 10fr;
   }
   .slide {
     grid-template-columns: 1fr;
@@ -41,7 +41,7 @@
     width: 90px;
     height: 45px;
     margin: 0;
-    margin-left: 5.2em;
+    margin-left: 6em;
   }
   blockquote {
     font-size: 20px;
@@ -49,8 +49,6 @@
     margin: 0 30px;
   }
   .curve-bg {
-    position: absolute;
-    bottom: 10;
     width: 70%;
   }
 }
