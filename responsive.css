@@ -1,0 +1,56 @@
+@media (max-width: 875px) {
+  main {
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr 8fr;
+  }
+  .slide {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .info-container {
+    grid-row: 2;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    background-size: 80px 70px;
+    background-position-x: center;
+    padding-top: 1em;
+  }
+  .hero {
+    background-image: url(./images/pattern-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 20px;
+  }
+  .hero .user-img {
+    width: 80%;
+    margin: 30px;
+    justify-self: center;
+  }
+
+  figcaption {
+    display: block;
+    margin: 1em 0 0 0;
+  }
+  .controls {
+    grid-area: 2;
+    align-items: center;
+    width: 90px;
+    height: 45px;
+    margin: 0;
+    margin-left: 5.2em;
+  }
+  blockquote {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 30px;
+  }
+  .curve-bg {
+    position: absolute;
+    bottom: 10;
+    width: 70%;
+  }
+}

@@ -18,32 +18,49 @@ body {
   color: hsl(228, 45%, 44%);
 }
 main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 1fr;
   position: relative;
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-  background-position-x: 670px;
-  /* background-size: 50% 100%; */
-  background-position-y: 5px;
+  background-position-x: 650px;
+  background-position-y: 120px;
   background-image: url(./images/pattern-bg.svg);
 }
 .curve-bg {
   position: absolute;
   bottom: 0;
 }
-.slider {
-  display: grid;
+.slide {
+  display: none;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: left;
   position: absolute;
-  margin-top: 2.1em;
+  height: 90%;
+  animation: slide 2s ease;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.slide.active {
+  display: grid;
 }
 .info-container {
   background-image: url(./images/pattern-quotes.svg);
   background-repeat: no-repeat;
   background-position-x: 100px;
   width: 90%;
+  height: 20%;
   position: relative;
   left: 0;
   margin-left: 5em;
@@ -59,21 +76,28 @@ main {
   z-index: 2;
 }
 .user-img {
-  box-shadow: 0px 10px 30px 2px rgba(32, 32, 70, 0.2);
+  box-shadow: 0px 10px 30px 2px rgba(58, 58, 111, 0.2);
+  border-radius: 10px;
+  margin-top: 3em;
 }
-button {
+.controls {
+  grid-area: 2/2;
+  z-index: 3;
   width: 100px;
-  height: 45px;
-  margin: -30px;
+  height: 50px;
+  margin: -50px;
   margin-left: 70px;
   border: none;
   border-radius: 50px;
   align-items: center;
   box-shadow: 0px 10px 30px 2px rgba(32, 32, 70, 0.2);
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 button img {
-  margin: 0 1.3em;
+  margin: 0;
 }
 blockquote {
   color: var(--DarkBlue);

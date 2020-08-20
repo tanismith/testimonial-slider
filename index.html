@@ -6,54 +6,65 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  <title>Coding Bootcamp Testimonials Slider</title>
 </head>
 <body>
 <main>
-  <!-- slider 1 -->
   <div class="slider">
-    <figure class="info-container">
-      <blockquote>
-        “ I’ve been interested in coding for a while but never taken the jump, until now. 
-        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-        excited about the future. ”
-      </blockquote>
-      <figcaption>
-        <div class="name">Tanya Sinclair</div>
-        <div class="rol">UX Engineer</div>
-      </figcaption>  
-    </figure>
-    <div class="hero">
-      <img class="user-img" src="./images/image-tanya.jpg" alt="tanya">
-      <button><img src="./images/icon-prev.svg" alt="prev"><img src="./images/icon-next.svg" alt="next"></button>
-    </div>
+<!-- slider 1 -->
+<div class="slide active">
+  <figure class="info-container">
+    <blockquote>
+      “ I’ve been interested in coding for a while but never taken the jump, until now. 
+      I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+      excited about the future. ”
+    </blockquote>
+    <figcaption>
+      <div class="name">Tanya Sinclair</div>
+      <div class="rol">UX Engineer</div>
+    </figcaption>  
+  </figure>
+  <div class="hero">
+    <img class="user-img" src="./images/image-tanya.jpg" alt="tanya">
+    
   </div>
-  
-     <!-- fin de slider 1 -->
-     <!-- slider 2 -->
-  <!-- <div class="slider">
-    <figure class="info-container">
+</div>
+   <!-- fin de slider 1 -->
+   <!-- slider 2 -->
+<div class="slide">
+  <figure class="info-container">
       <blockquote>
         “ If you want to lay the best foundation possible I’d recommend taking this course. 
-  The depth the instructors go into is incredible. I now feel so confident about 
-  starting up as a professional developer. ”
+        The depth the instructors go into is incredible. I now feel so confident about 
+        starting up as a professional developer. ”
       </blockquote>
       <figcaption>
         <div class="name">John Tarkpor</div>
         <div class="rol">Junior Front-end Developer</div>
       </figcaption>  
-    </figure>
-    <div class="hero">
-      <img src="./images/image-john.jpg" alt="john">
-      <button><img src="./images/icon-prev.svg" alt="prev"><img src="./images/icon-next.svg" alt="next"></button>
+  </figure>
+  <div class="hero">
+      <img class="user-img" src="./images/image-john.jpg" alt="john">
+  </div>
+</div>
+  </div>
+  <div class="controls">
+    <div class="prev">
+      <img src="./images/icon-prev.svg" alt="prev">
     </div>
-  </div> -->
+    <div class="next">
+      <img src="./images/icon-next.svg" alt="next">
+    </div>
+  </div>
   <img class="curve-bg" src="./images/pattern-curve.svg" alt="curve">
 </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+ 
+  <script src="main.js"></script>
 </body>
 </html>
