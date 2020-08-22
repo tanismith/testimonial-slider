@@ -36,12 +36,13 @@
     margin: 1em 0 0 0;
   }
   .controls {
-    grid-area: 2;
+    position: absolute;
+    bottom: -28rem;
+    right: 7em;
+    z-index: 5;
     align-items: center;
     width: 90px;
     height: 45px;
-    margin: 0;
-    margin-left: 6em;
   }
   blockquote {
     font-size: 20px;
