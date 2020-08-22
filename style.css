@@ -81,8 +81,8 @@ main {
 }
 .controls {
   position: absolute;
-  bottom: 6rem;
-  right: 35rem;
+  bottom: 6.5rem;
+  right: 30rem;
   z-index: 3;
   width: 100px;
   height: 50px;
